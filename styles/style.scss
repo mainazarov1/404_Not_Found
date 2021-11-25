@@ -16,18 +16,18 @@ body {
 header {
   position: absolute;
   top: 20px;
-	@media(max-width:767px){
-		margin-left: 25px;
-	}
-	
+  @media (max-width: 767px) {
+    margin-left: 25px;
+  }
+
   a {
     color: #fff;
     text-decoration: none;
     font-size: 1.8em;
     font-weight: 700;
-		@media(max-width:575px){
-			font-size: 1.2rem;
-		}
+    @media (max-width: 575px) {
+      font-size: 1.2rem;
+    }
     &::before,
     &::after {
       content: attr(data-text);
@@ -76,29 +76,28 @@ header {
 section {
   // height: 100%;
   width: 100%;
-	padding-top: 200px;
-	@media (max-width:575px) {
-		// height: 100%;
-	padding-top: 100px;
-
-	}
+  padding-top: 200px;
+  @media (max-width: 575px) {
+    // height: 100%;
+    padding-top: 100px;
+  }
   img {
     width: 35%;
     object-fit: contain;
     transform: rotateZ(-50deg);
-		@media(max-width:767px){
-			width: 60%;
-		}
-		@media(max-width:575px){
-			width: 70%;
-		}
+    @media (max-width: 767px) {
+      width: 60%;
+    }
+    @media (max-width: 575px) {
+      width: 70%;
+    }
   }
   .content {
     width: 60%;
-		@media(max-width:767px){
-			width: 95%;
-			text-align: center;
-		}
+    @media (max-width: 767px) {
+      width: 95%;
+      text-align: center;
+    }
     h1 {
       position: relative;
       font-size: 5rem;
@@ -118,14 +117,14 @@ section {
         font-size: 3rem;
         line-height: 60px;
       }
-			@media(max-width:767px){
-				font-size: 4rem;
+      @media (max-width: 767px) {
+        font-size: 4rem;
         line-height: 70px;
-			}
-			@media(max-width:575px){
-				font-size: 3rem;
+      }
+      @media (max-width: 575px) {
+        font-size: 3rem;
         line-height: 50px;
-			}
+      }
     }
     h3 {
       letter-spacing: 3px;
@@ -147,13 +146,13 @@ section {
         letter-spacing: 2px;
         width: 80%;
       }
-			@media(max-width:767px){
-				width: 80%;
-				margin: 30px auto;
-			}
-			@media(max-width:375px){
-				width: 95%;
-			}
+      @media (max-width: 767px) {
+        width: 80%;
+        margin: 30px auto;
+      }
+      @media (max-width: 375px) {
+        width: 95%;
+      }
     }
     button {
       width: 300px;
@@ -167,9 +166,9 @@ section {
       transition: 0.4s;
       position: relative;
       margin-top: 50px;
-			@media (max-width:575px) {
-				width: 250px;
-			}
+      @media (max-width: 575px) {
+        width: 250px;
+      }
       &::before,
       &::after {
         position: absolute;
@@ -178,9 +177,9 @@ section {
         height: 70px;
         z-index: -1;
         transition: 0.3s;
-				@media (max-width:575px) {
-					width: 250px;
-				}
+        @media (max-width: 575px) {
+          width: 250px;
+        }
       }
       &::before {
         top: -6px;
@@ -215,16 +214,16 @@ section {
   right: 0;
   margin: 0 auto;
   font-weight: 300;
-	@media (max-width:767px) {
-		position: relative;
-		bottom: 0;
-		margin-top: 50px;
-	}
-	@media (max-width:575px) {
-		position: absolute;
-		bottom: 0;
-		margin-top: 50px;
-	}
+  @media (max-width: 767px) {
+    position: relative;
+    bottom: 0;
+    margin-top: 50px;
+  }
+  @media (max-width: 575px) {
+    position: absolute;
+    bottom: 0;
+    margin-top: 50px;
+  }
   a {
     font-weight: 700;
     color: #ca1853;
