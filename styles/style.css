@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  background-image: url("../images/stars-964022.png");
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+}
+
+header {
+  position: absolute;
+  top: 20px;
+}
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8em;
+  font-weight: 700;
+}
+header a::before, header a::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+header a::before {
+  color: red;
+  animation: glitch-effect 3s infinite;
+}
+header a::after {
+  color: blue;
+  animation: glitch-effect 2s infinite;
+}
+@keyframes glitch-effect {
+  0% {
+    left: -2px;
+    top: -2px;
+  }
+  25% {
+    left: 2px;
+    top: 0px;
+  }
+  50% {
+    left: -1px;
+    top: 2px;
+  }
+  75% {
+    left: 1px;
+    top: -1px;
+  }
+  100% {
+    left: 0px;
+    top: -2px;
+  }
+}
+header a:hover {
+  color: #fff;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+}
+section img {
+  width: 35%;
+  object-fit: contain;
+  transform: rotateZ(-50deg);
+}
+section .content {
+  width: 60%;
+}
+section .content h1 {
+  position: relative;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 100px;
+  color: #fff;
+  z-index: 1000;
+}
+section .content h3 {
+  letter-spacing: 3px;
+  width: 60%;
+  font-size: 1.8em;
+  margin: 30px 0;
+}
+section .content button {
+  width: 300px;
+  height: 70px;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #000;
+  border: 3px solid #ddd;
+  transition: 0.4s;
+  position: relative;
+  margin-top: 50px;
+}
+section .content button::before, section .content button::after {
+  position: absolute;
+  content: "";
+  width: 300px;
+  height: 70px;
+  z-index: -1;
+  transition: 0.3s;
+}
+section .content button::before {
+  top: -6px;
+  left: -6px;
+  border: 1px solid red;
+  background-color: red;
+}
+section .content button::after {
+  top: 1px;
+  left: 1px;
+  border: 1px solid blue;
+  background-color: blue;
+}
+section .content button:hover {
+  border-style: solid;
+  background-color: #000;
+  color: #fff;
+}
+section .content button:hover::before, section .content button:hover::after {
+  top: -3px;
+  left: -3px;
+}
+
+.link {
+  position: absolute;
+  width: 350px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-weight: 300;
+}
+.link a {
+  font-weight: 700;
+  color: #ca1853;
+}
+
+/*# sourceMappingURL=style.css.map */
